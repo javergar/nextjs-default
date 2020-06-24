@@ -4,7 +4,7 @@
   "reason": { "react-jsx": 3 },
   "refmt": 3,
   "bs-dependencies": ["reason-react", "bs-fetch", "@glennsl/bs-json"],
-  "ppx-flags": [],
+  "ppx-flags": [ ["@dylanirlbeck/tailwind-ppx/tailwind-ppx", "-path styles/tailwind.css"] ],
   "sources": [
     { "dir": "common" },
     { "dir": "bindings" },

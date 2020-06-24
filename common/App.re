@@ -1,8 +1,5 @@
 open Util.ReactStuff;
 
-%raw
-"import('../styles/main.css')";
-
 // This type is based on the getInitialProps return value.
 // If you are using getServerSideProps or getStaticProps, you probably
 // will never need this

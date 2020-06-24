@@ -18,14 +18,16 @@
   "scripts": {
     "dev": "next",
     "build": "bsb -clean-world -make-world && next build",
+    "tw:build": "tailwindcss build ./styles/main.css -o ./styles/tailwind.css",
     "now-build": "bsb -clean-world -make-world && next build",
     "export": "next export",
-    "start": "next start -p $PORT",
+    "start": "next start -p 3000",
     "bs:build": "bsb -make-world",
     "bs:clean": "bsb -clean-world",
     "bs:start": "bsb -make-world -w"
   },
   "devDependencies": {
+    "@dylanirlbeck/tailwind-ppx": "^0.7.7",
     "autoprefixer": "^9.5.1",
     "bs-platform": "^7.1.1",
     "cssnano": "^4.1.10",

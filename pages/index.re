@@ -1,6 +1,3 @@
-%raw
-"require('../styles/main.css')";
-
 open Util.ReactStuff;
 
 module P = {
@@ -11,7 +8,7 @@ module P = {
 [@react.component]
 let make = () =>
   <div>
-    <h1 className="text-3xl font-semibold">
+    <h1 className=[%tw "text-3xl font-semibold"]>
       "What is this about?"->ReasonReact.string
     </h1>
     <P>
